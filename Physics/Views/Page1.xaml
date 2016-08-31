@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Physics.Views.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Physics.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+          EntranceNavigationTransitionInfo.IsTargetElement="True">
+        
+        <TextBlock Style="{ThemeResource TitleTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Top" Text="Добро пожаловать в электронное пособие" FontWeight="Bold"  Margin="0,68,0,0" />
+        <TextBlock Style="{ThemeResource TitleTextBlockStyle}" HorizontalAlignment="Center" Text="Для перехода а меню нажмите кнопку в левом верхнем углу." FontWeight="Bold"  Margin="52,0,50,0" Height="132" VerticalAlignment="Bottom" />
+        <Image x:Name="image" Margin="52,168,52,172" Source="ms-appx:///Assets/SplashScreen.png"/>
+
+
+    </Grid>
+</Page>

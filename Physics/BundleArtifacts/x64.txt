@@ -1,0 +1,2 @@
+MainPackage=D:\KP\Physics\Physics\bin\x64\Debug\Physics_1.0.0.0_x64_Debug.appx
+SymbolPackage=D:\KP\Приложение Механика\Physics_1.0.0.0_Debug_Test\Physics_1.0.0.0_x64_Debug.appxsym

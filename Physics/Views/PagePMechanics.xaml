@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Physics.Views.PagePMechanics"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Physics.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" SizeChanged="Page_SizeChanged">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+          EntranceNavigationTransitionInfo.IsTargetElement="True" x:Name="myMainPage">
+
+        <FlipView x:Name="flipView" Margin="10,11,10,31" Background="#FFC9C9C9" Style="{StaticResource fvStyle}" SelectionChanged="flipView_SelectionChanged">
+
+        </FlipView >
+
+        <ProgressBar x:Name="j" Height="3" Margin="10,2,10,0" VerticalAlignment="Top" Maximum="{Binding CountPageFV}" Value="{Binding ElementName=str,Path=Text}" />
+        <StackPanel Margin="0,0,10,10" HorizontalAlignment="Right" Width="100" Height="16" VerticalAlignment="Bottom" Orientation="Horizontal">
+            <TextBlock><Run x:Name="str" Text="{Binding SelectPageFV}"></Run><Run>/</Run><Run x:Name="maxstr" Text="{Binding CountPageFV}"></Run></TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>

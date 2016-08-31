@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{CA720ADE-FE02-4A80-A970-DEE7B8C41A3E}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Physics</RootNamespace>
+    <AssemblyName>Physics</AssemblyName>
+    <DefaultLanguage>ru-RU</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Physics_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxPackageDir>D:\KP\Приложение Механика\</AppxPackageDir>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86</AppxBundlePlatforms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Assets\001.jpg" />
+    <Content Include="Assets\002.jpg" />
+    <Content Include="Assets\003.gif" />
+    <Content Include="Assets\003.jpg" />
+    <Content Include="Assets\004.jpg" />
+    <Content Include="Assets\005.jpg" />
+    <Content Include="Assets\006.jpg" />
+    <Content Include="Assets\007-008.jpg" />
+    <Content Include="Assets\009.jpg" />
+    <Content Include="Assets\010-011.jpg" />
+    <Content Include="Assets\012-013.jpg" />
+    <Content Include="Assets\012.gif" />
+    <Content Include="Assets\014 %281%29.gif" />
+    <Content Include="Assets\014.gif" />
+    <Content Include="Assets\014.jpg" />
+    <Content Include="Assets\015.jpg" />
+    <Content Include="Assets\016.jpg" />
+    <Content Include="Assets\017.jpg" />
+    <Content Include="Assets\018-019.jpg" />
+    <Content Include="Assets\020.jpg" />
+    <Content Include="Assets\021.gif" />
+    <Content Include="Assets\021.jpg" />
+    <Content Include="Assets\022-023.jpg" />
+    <Content Include="Assets\023.gif" />
+    <Content Include="Assets\024.gif" />
+    <Content Include="Assets\024.jpg" />
+    <Content Include="Assets\025.jpg" />
+    <Content Include="Assets\026.jpg" />
+    <Content Include="Assets\027.gif" />
+    <Content Include="Assets\027.jpg" />
+    <Content Include="Assets\028.jpg" />
+    <Content Include="Assets\029.jpg" />
+    <Content Include="Assets\030.jpg" />
+    <Content Include="Assets\031.jpg" />
+    <Content Include="Assets\032.jpg" />
+    <Content Include="Assets\033.gif" />
+    <Content Include="Assets\033.jpg" />
+    <Content Include="Assets\034-035.jpg" />
+    <Content Include="Assets\036.jpg" />
+    <Content Include="Assets\037-038.jpg" />
+    <Content Include="Assets\037.gif" />
+    <Content Include="Assets\039.jpg" />
+    <Content Include="Assets\040-041.jpg" />
+    <Content Include="Assets\040.gif" />
+    <Content Include="Assets\041.gif" />
+    <Content Include="Assets\042-043-044.jpg" />
+    <Content Include="Assets\044.gif" />
+    <Content Include="Assets\045-046-047.jpg" />
+    <Content Include="Assets\045.gif" />
+    <Content Include="Assets\046.gif" />
+    <Content Include="Assets\048.jpg" />
+    <Content Include="Assets\049.jpg" />
+    <Content Include="Assets\050.jpg" />
+    <Content Include="Assets\051-052.jpg" />
+    <Content Include="Assets\053.jpg" />
+    <Content Include="Assets\054.jpg" />
+    <Content Include="Assets\055.gif" />
+    <Content Include="Assets\055.jpg" />
+    <Content Include="Assets\056-057-058-059.jpg" />
+    <Content Include="Assets\059.gif" />
+    <Content Include="Assets\060.gif" />
+    <Content Include="Assets\060.jpg" />
+    <Content Include="Assets\061.gif" />
+    <Content Include="Assets\061.jpg" />
+    <Content Include="Assets\062.gif" />
+    <Content Include="Assets\062.jpg" />
+    <Content Include="Assets\063-064-065.jpg" />
+    <Content Include="Assets\066-067-068.jpg" />
+    <Content Include="Assets\066.gif" />
+    <Content Include="Assets\069.gif" />
+    <Content Include="Assets\069.jpg" />
+    <Content Include="Assets\070.gif" />
+    <Content Include="Assets\070.jpg" />
+    <Content Include="Assets\071.gif" />
+    <Content Include="Assets\071.jpg" />
+    <Content Include="Assets\072.gif" />
+    <Content Include="Assets\072.jpg" />
+    <Content Include="Assets\073.gif" />
+    <Content Include="Assets\081.gif" />
+    <Content Include="Assets\085.gif" />
+    <Content Include="Assets\094.gif" />
+    <Content Include="Assets\095.gif" />
+    <Content Include="Assets\099.gif" />
+    <Content Include="Assets\100.gif" />
+    <Content Include="Assets\105.gif" />
+    <Content Include="Assets\108.gif" />
+    <Content Include="Assets\111.gif" />
+    <Content Include="Assets\112.gif" />
+    <Content Include="Assets\117.gif" />
+    <Content Include="Assets\118.gif" />
+    <Content Include="Assets\119.gif" />
+    <Content Include="Assets\120.gif" />
+    <Content Include="Assets\121.gif" />
+    <Content Include="Assets\122.gif" />
+    <Content Include="Assets\123.gif" />
+    <Content Include="Assets\124.gif" />
+    <Content Include="Assets\130.gif" />
+    <Content Include="Assets\131.gif" />
+    <Content Include="Assets\132.gif" />
+    <Content Include="Assets\134.gif" />
+    <Content Include="Assets\136.gif" />
+    <Content Include="Assets\137.gif" />
+    <Content Include="Assets\151.gif" />
+    <Content Include="Assets\152.gif" />
+    <Content Include="Assets\155.gif" />
+    <Content Include="Assets\164.gif" />
+    <Content Include="Assets\166.gif" />
+    <Content Include="Assets\174 %281%29.gif" />
+    <Content Include="Assets\174.gif" />
+    <Content Include="Assets\175.gif" />
+    <Content Include="Assets\180.gif" />
+    <Content Include="Assets\181.gif" />
+    <Content Include="Assets\183.gif" />
+    <Content Include="Assets\184.gif" />
+    <Content Include="Assets\187.gif" />
+    <Content Include="Assets\190.gif" />
+    <Content Include="Assets\194.gif" />
+    <Content Include="Assets\196.gif" />
+    <Content Include="Assets\197 %281%29.gif" />
+    <Content Include="Assets\197.gif" />
+    <Content Include="Assets\198.gif" />
+    <Content Include="Assets\203.gif" />
+    <Content Include="Assets\205.gif" />
+    <Content Include="Assets\207.gif" />
+    <Content Include="Assets\208.gif" />
+    <Content Include="Assets\211 %281%29.gif" />
+    <Content Include="Assets\211.gif" />
+    <Content Include="Assets\212.gif" />
+    <Content Include="Assets\216.gif" />
+    <Content Include="Assets\217.gif" />
+    <Content Include="Assets\219.gif" />
+    <Content Include="Assets\220.gif" />
+    <Content Include="Assets\226.gif" />
+    <Content Include="Assets\Line.png" />
+    <Content Include="Assets\Snow.png" />
+    <Content Include="Assets\sport_lignik2.gif" />
+    <Content Include="Assets\for1.jpg" />
+    <Content Include="Assets\for2.jpg" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\Колесо.png" />
+    <Content Include="PhysicsDB.db" />
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddContent.cs" />
+    <Compile Include="Anim.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppShell.xaml.cs">
+      <DependentUpon>AppShell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NavMenuListView.cs" />
+    <Compile Include="Controls\PageHeader.xaml.cs">
+      <DependentUpon>PageHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Formul.cs" />
+    <Compile Include="Exep.xaml.cs">
+      <DependentUpon>Exep.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormulCase.xaml.cs" />
+    <Compile Include="Migrations\20160629085506_DbMigration.cs" />
+    <Compile Include="Migrations\20160629085506_DbMigration.designer.cs">
+      <DependentUpon>20160629085506_DbMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\PhysicsContextModelSnapshot.cs" />
+    <Compile Include="NavMenuItem.cs" />
+    <Compile Include="DB\PhysicsContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DB\Ptable.cs" />
+    <Compile Include="SerializeSetting.cs" />
+    <Compile Include="SettingApp.cs" />
+    <Compile Include="DB\TaskTest.cs" />
+    <Compile Include="Views\Animation1.xaml.cs">
+      <DependentUpon>Animation1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Animation2.xaml.cs">
+      <DependentUpon>Animation2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tests.xaml.cs">
+      <DependentUpon>Tests.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page2.xaml.cs">
+      <DependentUpon>Page2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page3.xaml.cs">
+      <DependentUpon>Page3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PagePMechanics.xaml.cs" />
+    <Compile Include="Views\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Physics_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AppShell.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PageHeader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Exep.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormulCase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Views\Animation1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Animation2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Tests.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Page1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Page2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Page3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PagePMechanics.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
+      <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Expander\Expander.csproj">
+      <Project>{6ffb913b-cc9c-4176-8fd5-ac5ed56ab86b}</Project>
+      <Name>Expander</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Animate\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

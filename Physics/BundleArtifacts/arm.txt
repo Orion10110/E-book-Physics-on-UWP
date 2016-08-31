@@ -1,0 +1,3 @@
+MainPackage=D:\KP\Physics\Physics\bin\ARM\Debug\Physics_1.0.0.0_ARM_Debug.appx
+SymbolPackage=D:\KP\Приложение Механика\Physics_1.0.0.0_Debug_Test\Physics_1.0.0.0_ARM_Debug.appxsym
+ResourcePack=D:\KP\Physics\Physics\bin\ARM\Debug\Physics_1.0.0.0_language-en.appx
